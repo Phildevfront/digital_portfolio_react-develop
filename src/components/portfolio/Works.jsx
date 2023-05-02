@@ -7,7 +7,7 @@ import CardWork from './CardWork'
 const Works = () => {
 
   const [isLoading, setIsLoading] = useState(true) // loading des datas
-  const [works, setWorks] = useState(null)
+  const [works, setWorks] = useState(true)
 
   useEffect(() => {
     fetch('http://localhost:1337/works',
@@ -25,14 +25,15 @@ const Works = () => {
     })
   },[])
 
+
   return (
     <section id="portfolio">
     <h5>My recent Work</h5>
     <h2>Portfolio</h2>
     <div className='container portfolio__container'>
-      <div>
-        { isLoading ? 'Loading...' : works.map(work => <CardWork work={work} key={work.id} /> )}
-      </div>
+
+        { isLoading ? 'Loading...' : works.map(work => <CardWork work={work} key={work.id}/> )}
+
       {/* <article className='portfolio__item'>
         <div className='portfolio__item-image'>
           <img src={IMG1} alt="img" />

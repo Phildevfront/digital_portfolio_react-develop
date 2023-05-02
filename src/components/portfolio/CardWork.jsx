@@ -5,21 +5,25 @@ import {API_URL} from "../../config.js";
 
 export default function CardWork({work}) {
 	return (
-
+    <div>
 		<article className='portfolio__item'>
         <div className='portfolio__item-image'>
-          <img src={ API_URL + work.image.formats.small.url }  alt="img" />
+          <img src= {work.image !== null ? API_URL + work.image[0].formats.small.url : "..."} alt="pict" />
         </div>
-        <h3>{work.title}</h3>
+        <h3 className='portfolio__item-title'>{work.title}</h3>
         <div className="portfolio__item-content">
           <p>
             {work.content}
           </p>
         </div>
         <div className="portfolio__item-cta">
-          <a href='https://github.com' className='btn' target='_blank' rel="noreferrer">Github</a>
-          <a href='https://github.com' className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
+          <span>
+            {/* <button className='btn btn-primary' target='_blank' rel="noreferrer">{work.url}</button> */}
+            {/* <a href='@' className='btn' target='_blank' rel="noreferrer">{work.url}</a> */}
+          </span>
+          {/* <a href='#' className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a> */}
         </div>
       </article>
+    </div>
 	)
 }

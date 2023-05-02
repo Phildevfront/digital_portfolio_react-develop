@@ -7,10 +7,10 @@ import {faTwitter, faLinkedin, faGithub} from '@fortawesome/fontawesome-free-bra
 const HeaderSocials = () => {
   return (
     <div className='header__socials'>
-        <a href='https://linkedin.com' target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a>
-        <a href='https://linkedin.com' target="_blank"><FontAwesomeIcon icon={faTwitter}/></a>
-        <a href='https://linkedin.com' target="_blank"><FontAwesomeIcon icon={faGithub}/></a>
-        
+        <a href='https://linkedin.com' target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a>
+        <a href='https://linkedin.com' target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter}/></a>
+        <a href='https://linkedin.com' target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub}/></a>
+
     </div>
   )
 }
