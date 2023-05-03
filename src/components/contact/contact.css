@@ -37,7 +37,7 @@ h4{
 .contact__option-text{
 	font-family: 'nunito';
 	font-weight: lighter;
-	color: var(--color-primary);
+	color: var(--color-light);
 }
 
 /* ---------------------form---------------------*/

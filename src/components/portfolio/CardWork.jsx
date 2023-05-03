@@ -16,8 +16,9 @@ export default function CardWork({work}) {
             {work.content}
           </p>
         </div>
-        <div className="portfolio__item-cta">
+        <div className="portfolio__item-email">
           <span>
+            <p>{work.site}</p>
             {/* <button className='btn btn-primary' target='_blank' rel="noreferrer">{work.url}</button> */}
             {/* <a href='@' className='btn' target='_blank' rel="noreferrer">{work.url}</a> */}
           </span>

@@ -2,7 +2,7 @@ nav {
     background: rgba(0, 0, 0, 0.3);
     width: max-content;
     display: block;
-    padding: 0.7rem 1.9rem;
+    padding: 0.7rem 1.7rem;
     z-index: 2;
     position: fixed;
     left: 50%;
@@ -28,11 +28,11 @@ nav a:hover {
 }
 
 nav a.active {
-    background: var(--color-primary-variant);
-    color: var(--color-white);
+    background: var(--color-primary);
+    color: var(--color-bg);
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 428px) {
 
     nav {
         width: 95%;
@@ -41,10 +41,10 @@ nav a.active {
     nav a {
         font-size: 0.9rem;
         padding-left: 0.2rem;
-       
+
     }
 
     nav a.active {
         color: var(--color-white);
     }
-}
+} */
