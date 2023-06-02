@@ -7,7 +7,6 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 const Services = () => {
   return (
     <section id="services">
-      <h5>What I Offer</h5>
       <h2>Services</h2>
       <div className="container service__container">
         <article className="service">

@@ -32,19 +32,9 @@ nav a.active {
     color: var(--color-bg);
 }
 
-/* @media screen and (max-width: 428px) {
+@media screen and (max-width: 340px) {
 
     nav {
-        width: 95%;
+        padding: 0.7rem 0.9rem;
     }
-
-    nav a {
-        font-size: 0.9rem;
-        padding-left: 0.2rem;
-
-    }
-
-    nav a.active {
-        color: var(--color-white);
-    }
-} */
+}

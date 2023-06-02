@@ -1,7 +1,6 @@
 import React, {useEffect, useState } from 'react'
+import CardWork from '../cardwork/CardWork'
 import './works.css'
-
-import CardWork from './CardWork'
 
 
 const Works = () => {
@@ -28,7 +27,6 @@ const Works = () => {
 
   return (
     <section id="portfolio">
-    <h5>My recent Work</h5>
     <h2>Portfolio</h2>
     <div className='container portfolio__container'>
 

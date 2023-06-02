@@ -1,6 +1,6 @@
 import React from "react";
 import './cardwork.css';
-import {API_URL} from "../../config.js";
+import {API_URL} from "../../../config";
 
 
 export default function CardWork({work}) {
@@ -8,7 +8,7 @@ export default function CardWork({work}) {
     <div>
 		<article className='portfolio__item'>
         <div className='portfolio__item-image'>
-          <img src= {work.image !== null ? API_URL + work.image[0].formats.small.url : "..."} alt="pict" />
+          <img className='portfolio__src-image' src= {work.image !== null ? API_URL + work.image[0].formats.small.url : "..."} alt="pict" />
         </div>
         <h3 className='portfolio__item-title'>{work.title}</h3>
         <div className="portfolio__item-content">
@@ -16,13 +16,12 @@ export default function CardWork({work}) {
             {work.content}
           </p>
         </div>
-        <div className="portfolio__item-email">
+        <div className="portfolio__read-more">
           <span>
-            <p>{work.site}</p>
+            {/* <a href="" >Read More</a> */}
             {/* <button className='btn btn-primary' target='_blank' rel="noreferrer">{work.url}</button> */}
-            {/* <a href='@' className='btn' target='_blank' rel="noreferrer">{work.url}</a> */}
           </span>
-          {/* <a href='#' className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a> */}
+
         </div>
       </article>
     </div>
